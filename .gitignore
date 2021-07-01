@@ -8,7 +8,7 @@
 
 # misc
 .DS_Store
-.cache
+/.cache
 
 npm-debug.log*
 yarn-debug.log*
