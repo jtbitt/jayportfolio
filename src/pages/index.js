@@ -1,9 +1,10 @@
 import * as React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 const IndexPage = () => {
   return (
-    <div class="container p-8">
-      <section className="flex flex-col justify-center items-start space-y-6 h-screen">
+    <div class="container p-8 h-full">
+      <section className="flex flex-col justify-center items-start space-y-6 h-full">
         <h1 className="text-5xl text-black font-montserrat leading-tight">
           Hi, I'm Jay
           <br />
@@ -15,7 +16,7 @@ const IndexPage = () => {
           CONTACT ME
         </button>
       </section>
-      <section className="flex flex-col justify-center items-center space-y-10 h-screen">
+      <section className="flex flex-col justify-center items-center space-y-10 h-full">
         <div className="space-y-4">
           <h1 className="text-5xl text-black font-montserrat leading-tight">
             About
@@ -33,6 +34,28 @@ const IndexPage = () => {
         </div>
         <button className="p-2.5 text-xl font-semibold tracking-wider border-2 rounded-md border-gray-200">
           HIRE ME
+        </button>
+      </section>
+      <section className="flex flex-col justify-center items-center space-y-10 h-full">
+        <h1 className="text-5xl text-black font-montserrat leading-tight">
+          Portfolio
+        </h1>
+        <StaticImage
+          alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
+          src="https://picsum.photos/seed/picsum/350/200"
+        />
+        <div className="w-full">
+          <h4 className="text-lg text-black font-montserrat">Title</h4>
+          <p>Fancylingo</p>
+        </div>
+        <div className="w-full">
+          <h4 className="text-lg text-black font-montserrat">
+            Development Tools
+          </h4>
+          <p>Lorem ipsum, lorem ipsum, lorem.</p>
+        </div>
+        <button className="p-2.5 text-xl font-semibold tracking-wider border-2 rounded-md border-gray-200">
+          VIEW PROJECT
         </button>
       </section>
     </div>
